@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* colors */
+  --clr-primary: #fff;
+  --clr-complementary: rgb(39, 39, 39);
+  --clr-accent: #999;
+
+  /* font family */
+  --ff-primary: 'Inter', sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  /* font weight */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /* font size */
+  --fs-1: 0.9rem;
+  --fs-2: 1rem;
+  --fs-3: 1.5rem;
+  --fs-4: 2rem;
+}
+
+/* CSS Reset */
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin, padding, and font */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-1);
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions, and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+  html:focus-within,
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.title {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.title::before {
+  content: '';
+  background-color: var(--clr-accent);
+  height: 3px;
+  width: 50px;
+  position: absolute;
+  bottom: -5px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+
+.flex {
+  display: flex;
+}
+
+/* ====== left-top ===== */
+
+.left.card {
+  min-height: 40vh;
+  background: var(--clr-complementary);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .5s;
+}
+
+.profile-img__container {
+  background: linear-gradient(to right, rgb(54, 54, 54), rgb(32, 32, 32));
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile__btn {
+  display: none;
+}
+
+.profile__name {
+  --margin: 0.5em 0;
+  margin: var(--margin);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-bold);
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.left.card:hover {
+  background: rgb(43, 43, 43);
+  transition-duration: .5s;
+}
+
+/* ====== right--bottom ===== */
+
+.container {
+  --padding: 2em;
+  padding: var(--padding);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.right section {
+  --margin: 2em;
+  --padding: 1em 0;
+  margin-bottom: var(--margin);
+  padding: var(--padding);
+}
+
+.divider {
+  content: '';
+  background-color: var(--clr-accent);
+  opacity: 0.3;
+  height: 1px;
+  width: 100%;
+}
+
+/* ===== Personal Data ====== */
+
+.personal__data .name {
+  display: none;
+  font-size: var(--fs-4);
+}
+
+.personal__data .flex {
+  /* font-size: var(--fs-2); */
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+
+/* ====== About ======= */
+
+.about {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ====== Skills ======== */
+
+.skill__container {
+  --margin: 2em 0;
+  margin: var(--margin);
+}
+
+.skill--title {
+  --margin: 1em;
+  font-size: var(--fs-2);
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: var(--margin);
+}
+
+.skill .grid {
+  display: grid;
+  gap: 2em;
+}
+
+.progress-loader {
+  position: relative;
+}
+
+.progress-loader {
+  width: 100%;
+  background: rgb(236, 236, 238);
+  height: 10px;
+  border-radius: 7px;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 10px;
+  border-radius: 7px;
+  background: var(--clr-accent);
+}
+
+/* Define custom classes with different percentages */
+.progress--html {
+  animation: progressHtmlAnimation 2s linear forwards;
+}
+
+.progress--css {
+  animation: progressCssAnimation 2s linear forwards;
+}
+
+.progress--js {
+  animation: progressJSAnimation 2s linear forwards;
+}
+
+.progress--bootstrap {
+  animation: progressBootstrapAnimation 2s linear forwards;
+}
+
+.progress--sql {
+  animation: progressSQLAnimation 2s linear forwards;
+}
+
+.progress--php {
+  animation: progressPHPAnimation 2s linear forwards;
+}
+
+.progress--java {
+  animation: progressJavaAnimation 2s linear forwards;
+}
+
+.progress--python {
+  animation: progressPythonAnimation 2s linear forwards;
+}
+
+.progress--content-creation {
+  animation: progressContentCreationAnimation 2s linear forwards;
+}
+
+.progress--video-editing {
+  animation: progressVideoEditingAnimation 2s linear forwards;
+}
+
+.progress--video-production {
+  animation: progressVideoProductionAnimation 2s linear forwards;
+}
+
+/* Keyframe animations for each custom class */
+@keyframes progressHtmlAnimation {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes progressCssAnimation {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes progressJSAnimation {
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes progressBootstrapAnimation {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes progressSQLAnimation {
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes progressPHPAnimation {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes progressJavaAnimation {
+  to {
+    width: 10%;
+  }
+}
+
+@keyframes progressPythonAnimation {
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes progressContentCreationAnimation {
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes progressVideoEditingAnimation {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes progressVideoProductionAnimation {
+  to {
+    width: 30%;
+  }
+}
+
+/* ====== certification ======= */
+
+.certification .card {
+  border-radius: 20px;
+  position: relative;
+  padding: 1.5em;
+  margin: 2em 0;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+}
+
+.card__details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.card--title {
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-2);
+}
+
+.text--body,
+.text--bottom {
+  color: rgb(134, 134, 134);
+}
+
+.card__button {
+  transform: translate(-50%, 125%);
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--clr-complementary);
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.card:hover {
+  border-color: var(--clr-accent);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card__button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+@media (min-width: 70rem) {
+  .main {
+    display: flex;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .profile__name {
+    display: none;
+  }
+
+  .right .title {
+    display: none;
+  }
+
+  .left {
+    width: 20%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+  }
+
+  /* Sidebar */
+  .profile__btn {
+    margin: 2em 0;
+    display: grid;
+    gap: 2em;
+    font-size: var(--fs-3);
+    font-weight: var(--fw-bold);
+    text-align: end;
+    width: 70%;
+  }
+
+  .sidebar--btn {
+    transition: all 300ms ease-in-out
+  }
+
+  .sidebar--btn:hover {
+    padding-right: 10px;
+  }
+
+  /* Right */
+
+  .right .personal__data .name {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
