@@ -7,9 +7,7 @@
   --clr-dark: #000;
 
   /* font family */
-  --ff-primary: 'Inter', sans-serif;
-  --ff-body: var(--ff-primary);
-  --ff-heading: var(--ff-primary);
+  --ff-base: 'Inter', sans-serif;
 
   /* font weight */
   --fw-light: 300;
@@ -74,8 +72,8 @@ html:focus-within {
 html,
 body {
   height: 100%;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-1);
+  font-family: var(--ff-base);
+  font-size: var(--fs-2);
   overflow-x: hidden;
 }
 
@@ -209,8 +207,6 @@ svg {
   display: none;
 }
 
-.profile-name {}
-
 .navbar {
   margin-top: 2em;
   width: 100%;
@@ -281,6 +277,7 @@ svg {
 .skill .grid {
   display: grid;
   gap: 2em;
+  grid-template-columns: 1fr 1fr;
 }
 
 .progress-loader {
@@ -417,11 +414,17 @@ svg {
 }
 
 /* Certifications  */
+
+.certification .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
 .certification .card {
   border-radius: 20px;
   position: relative;
   padding: 1.5em;
-  margin: 2em 0;
   border: 2px solid #c3c6ce;
   transition: 0.5s ease-out;
 }
@@ -531,6 +534,11 @@ svg {
   .navbar__link:hover {
     padding-right: 0;
     opacity: 0.7;
+  }
+
+  .skill .grid,
+  .certification .grid {
+    grid-template-columns: 1fr;
   }
 
   .section:first-child {
