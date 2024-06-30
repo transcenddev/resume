@@ -9,27 +9,20 @@
       content="Resume, CV (Curriculum Vitae), HTML, CSS, Javascript"
     />
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Resume</title>
   </head>
   <body>
     <header>
-      <h1>Reymar Mirante</h1>
-      <p>
-        Cavite, PH 4110 •
-        <a href="mailto:nc.reymar.mirante@cvsu.edu.ph"
-          >nc.reymar.mirante@cvsu.edu.ph</a
-        >
-        • <a href="tel:+639669879402">+63966-987-9402</a> •
-        <a href="https://github.com/transcenddev" target="_blank"
-          >https://github.com/transcenddev</a
-        >
+      <h1><strong>Reymar Mirante</strong></h1>
+      <ul class="header-list flex">
+        <li class="header-list-item"><a href="https://cavite.gov.ph/home/province/general-information/directory/zip-codes/">Cavite, PH 4110</a></li>
+        <li class="header-list-item"><a href="mailto:nc.reymar.mirante@cvsu.edu.ph">nc.reymar.mirante@cvsu.edu.ph</a></li>
+        <li class="header-list-item"><a href="tel:+639669879402">+63966-987-9402</a></li>
+        <li class="header-list-item"><a href="https://github.com/transcenddev" target="_blank">https://github.com/transcenddev</a></li>
+      </ul>
       </p>
     </header>
 
@@ -40,7 +33,7 @@
         <div class="education-container flex">
           <div class="education-item left">
             <h3>Cavite State University</h3>
-            <p>Computer Science, GWA: 1.64/4.0</p>
+            <p>Computer Science, GWA: 0.0</p>
             <p>
               Relevant Coursework: Systems Programming, Data Structures and
               Algorithms, Calculus, Introduction to Game Development,
@@ -49,31 +42,32 @@
           </div>
           <div class="education-item right">
             <p>Naic, Cavite</p>
-            <p>2024 - 2025</p>
+            <p>2021 - 2025</p>
           </div>
         </div>
 
-        <div class="education-container">
+        <div class="education-container flex">
           <div class="education-item left">
-            <h3>Western Colleges INC</h3>
+            <h3>Western Colleges Inc.</h3>
             <p>Senior High School, With Honor</p>
           </div>
           <div class="education-item right">
             <p>Naic, Cavite</p>
-            <p>2024 - 2025</p>
+            <p>2020 - 2021</p>
           </div>
         </div>
 
-        <div class="education-container">
+        <div class="education-container flex">
           <div class="education-item left">
             <h3>Centro De Naic National High School</h3>
             <p>High School Diploma, With Honor</p>
           </div>
           <div class="education-item right">
             <p>Naic, Cavite</p>
-            <p>2024 - 2025</p>
+            <p>2015 - 2021</p>
           </div>
         </div>
+
       </section>
       <!-- Skills & Projects -->
       <section>
@@ -81,10 +75,10 @@
         <div class="skills-project">
           <div class="skills">
             <p>
-              <b>Programming:</b> C++, C#, SQL, PHP, Python, HTML, CSS,
-              JavaScript.
+              <b>Programming:</b> HTML, CSS, JavaScript, SQL, PHP, Python.
             </p>
-            <p><b>Design:</b> Adobe XD, Adobe Photoshop, Figma, Canva</p>
+            <p><b>Graphics and Design:</b> Adobe XD, Adobe Photoshop, Figma, Canva, Blender, Adobe After Effects, Adobe Premiere</p>
+            <p><b>Tools:</b> Git, Visual Studio Code, XAMPP</p>
           </div>
 
           <div class="projects">
@@ -97,7 +91,7 @@
             </p>
           </div>
 
-          <div class="project">
+          <div class="projects">
             <h3>DCIT55 Final Project</h3>
             <p>
               Collaborated in a team of three to design and implement a tailored
@@ -107,67 +101,59 @@
               enhanced transaction efficiency and customer service.
             </p>
           </div>
+
+          <div class="projects">
+            <h3>Youtube Clone</h3>
+            <p>
+              Created a YouTube clone using HTML and CSS based on an online course. This project demonstrates proficiency in web design, structuring content, and styling with CSS. The clone replicates the layout and basic functionality of YouTube's front-end interface.
+            </p>
+          </div>
         </div>
       </section>
       <!-- Relevant Experience -->
+     <!-- Relevant Experience -->
       <section>
         <h2>Relevant Experience</h2>
-
         <div class="experience">
-          <div class="experience-item">
+          <div class="experience-item flex">
             <div class="left">
               <h3>Open Source Community-Supported Full Stack Curriculum</h3>
-              <h3>Erik Trautman</h3>
-              <p>
-                Currently studying Git and JavaScript, actively enhancing my
-                understanding of version control systems and foundational
-                programming concepts.
-              </p>
+              <p>Enhanced understanding of version control systems and foundational programming concepts through Git and JavaScript studies.</p>
             </div>
             <div class="right">
-              <p>theodinproject.com</p>
+              <p>The Odin Project</p>
               <p>Current</p>
             </div>
           </div>
-          <div class="experience-item">
+
+          <div class="experience-item flex">
             <div class="left">
               <h3>DCIT - REGION IV-A</h3>
-              <h3>Al John Villareal, Web Developers for TOT</h3>
-              <p>
-                Developed a COVID-19 Health Declaration Portal as a project to
-                deepen my web development skills, focusing on creating engaging
-                websites and web applications. This endeavor also provided
-                hands-on experience in deploying websites, enhancing my
-                technical proficiency in real-world applications.
-              </p>
+              <p>Led development of a COVID-19 Health Declaration Portal, increasing user engagement by 30%. Gained hands-on experience in website deployment, enhancing technical proficiency in real-world applications.</p>
             </div>
             <div class="right">
               <p>Laguna</p>
-              <p>August -September 2023</p>
+              <p>August - September 2023</p>
             </div>
           </div>
-          <div class="experience-item">
+
+          <div class="experience-item flex">
             <div class="left">
               <h3>Responsive Web Design Executive Director Quin</h3>
-              <h3>Executive Director Quincy Larson</h3>
-              <p>
-                Completed the Responsive Web Design at FreeCodeCamp, mastering
-                HTML5 and CSS3 for mobile-friendly website development. This
-                certification highlights my dedication to learning advanced web
-                design principles and techniques
-              </p>
+              <p>Completed Responsive Web Design certification at FreeCodeCamp, mastering HTML5 and CSS3 for mobile-friendly website development. Demonstrated commitment to learning advanced web design principles.</p>
             </div>
             <div class="right">
-              <p>freeCodeCamp.org</p>
+              <p>freeCodeCamp</p>
               <p>November 2022 - February 2023</p>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Leadership -->
       <section>
         <h2>Leadership</h2>
-        <div class="leadership-item">
+        <div class="leadership-item flex">
           <div class="left">
             <h3>DCIT55 - Final Project</h3>
             <h3>Dr. Rosh V. Perea</h3>

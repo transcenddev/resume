@@ -1,2 +1,2 @@
 # resume
- a resume using html & css.
+ a tech using html & css.
