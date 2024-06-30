@@ -3,300 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Reymar Mirante" />
-    <meta name="keywords" content="Resume, CV (Curriculum Vitae), HTML, CSS" />
-    <meta name="revised" content="Reymar Mirante, 26/07/2023" />
-
-    <title>Resume</title>
+    <meta name="author" content="dev" />
+    <meta
+      name="keywords"
+      content="Resume, CV (Curriculum Vitae), HTML, CSS, Javascript"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <!-- Google Fonts & Icons -->
-    <link rel="preconnect" href="https://api.fonts.coollabs.io" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet"
-    />
-    <!-- Favico -->
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <title>Resume</title>
   </head>
   <body>
-    <main class="main">
-      <section class="left">
-        <div class="profile__placeholder">
-          <div class="profile-img__container">
-            <div class="profile__background"></div>
-            <img
-              class="profile-img"
-              src="./assets/images/profile-pic1.jpg"
-              alt="profile-picture"
-            />
-          </div>
-        </div>
-        <div class="profile-text__container">
-          <p class="profile-name">Reymar Mirante</p>
-        </div>
-        <!-- Navbar -->
-        <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a href="#profile" class="navbar__link navbar__link">Profile</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#skill" class="navbar__link navbar__link">Skills</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#education" class="navbar__link navbar__link"
-                >Education</a
-              >
-            </li>
-            <li class="navbar__item">
-              <a href="#certification" class="navbar__link navbar__link"
-                >Certification</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section class="right">
-        <!-- Personal Data -->
-        <section class="section personal-data" id="profile">
-          <p class="personal-data__name">
-            <strong>Reymar Victoriano Mirante</strong>
-          </p>
-          <p class="flex">
-            <span class="material-icons-sharp icon">calendar_month</span>
-            September 27, 2022
-          </p>
-          <p class="flex">
-            <span class="material-icons-sharp icon">location_on</span>
-            Cavite, Philippines
-          </p>
-          <p class="flex">
-            <span class="material-icons-sharp icon">call</span>
-            +63-9669779402
-          </p>
-          <p class="flex">
-            <span class="material-icons-sharp icon">email</span>
-            mirantereymar@gmail.com
-          </p>
-        </section>
-        <div class="divider"></div>
-        <!-- Resume Summary -->
-        <section class="section about" id="about">
-          <p class="about__text">
-            A Detail-Oriented Student. Proficient in a wide range of programming
-            languages and technologies, including HTML, CSS, JavaScript, MySQL,
-            PHP, Java, and Python. Demonstrated expertise in creating dynamic
-            and responsive websites, web applications, and databases.
-          </p>
-        </section>
-        <div class="divider"></div>
-        <!-- Skill -->
-        <section class="section skill" id="skill">
-          <h2 class="section__title">Skills</h2>
-          <div class="skill__container">
-            <h2 class="section__sub-header">Development Skills</h2>
-            <div class="grid">
-              <div class="grid__item">
-                <p class="">HTML</p>
-                <div class="progress-loader">
-                  <div class="progress progress-html"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>CSS</p>
-                <div class="progress-loader">
-                  <div class="progress progress-css"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>JS</p>
-                <div class="progress-loader">
-                  <div class="progress progress-js"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>Bootstrap</p>
-                <div class="progress-loader">
-                  <div class="progress progress-bootstrap"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>SQL</p>
-                <div class="progress-loader">
-                  <div class="progress progress-sql"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>PHP</p>
-                <div class="progress-loader">
-                  <div class="progress progress-php"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>Java</p>
-                <div class="progress-loader">
-                  <div class="progress progress-java"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>Python</p>
-                <div class="progress-loader">
-                  <div class="progress progress-python"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skill__container">
-            <h2 class="section__sub-header">Other Skills</h2>
-            <div class="grid">
-              <div class="grid__item">
-                <p class="grid__item-text">Content Creation</p>
-                <div class="progress-loader">
-                  <div class="progress progress__content-creation"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>Video Editing</p>
-                <div class="progress-loader">
-                  <div class="progress progress__video-editing"></div>
-                </div>
-              </div>
-              <div class="grid__item">
-                <p>Video Production</p>
-                <div class="progress-loader">
-                  <div class="progress progress__video-production"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="divider"></div>
-        <!-- Education -->
-        <section class="section education" id="education">
-          <h2 class="section__title">Education</h2>
-          <div class="section__text-body">
-            <p>B.S. in Computer Science</p>
-            <p>Cavite State University Campus</p>
+    <header>
+      <h1>Reymar Mirante</h1>
+      <p>
+        Cavite, PH 4110 •
+        <a href="mailto:nc.reymar.mirante@cvsu.edu.ph"
+          >nc.reymar.mirante@cvsu.edu.ph</a
+        >
+        • <a href="tel:+639669879402">+63966-987-9402</a> •
+        <a href="https://github.com/transcenddev" target="_blank"
+          >https://github.com/transcenddev</a
+        >
+      </p>
+    </header>
+
+    <main>
+      <!-- Education -->
+      <section>
+        <h2>Education</h2>
+        <div class="education-container flex">
+          <div class="education-item left">
+            <h3>Cavite State University</h3>
+            <p>Computer Science, GWA: 1.64/4.0</p>
             <p>
-              Relevant Coursework: Python Programming, Web System and
-              Technologies, Introduction to Computing, Database Management
-              System, Objected-Oriented Programming.
+              Relevant Coursework: Systems Programming, Data Structures and
+              Algorithms, Calculus, Introduction to Game Development,
+              Application Development and Emerging Technologies
             </p>
           </div>
-        </section>
-        <div class="divider"></div>
-        <!-- Certification -->
-        <section class="section certification" id="certification">
-          <h2 class="section__title">Certifications</h2>
-          <div class="grid">
-            <div class="card">
-              <div class="card__details">
-                <p class="card__title">Basic Web Development Using Wordpress</p>
-                <p class="card__text-body">
-                  Department of Information and Communications Technology - ICT
-                  Literacy and Competency Development Bureau
-                </p>
-                <p class="card__text-bottom">January 10, 2023</p>
-              </div>
-              <button class="card__button">
-                <a
-                  href="./assets/certifications/Basic Web Development Using WordPress.pdf"
-                  download
-                  >More info</a
-                >
-              </button>
+          <div class="education-item right">
+            <p>Naic, Cavite</p>
+            <p>2024 - 2025</p>
+          </div>
+        </div>
+
+        <div class="education-container">
+          <div class="education-item left">
+            <h3>Western Colleges INC</h3>
+            <p>Senior High School, With Honor</p>
+          </div>
+          <div class="education-item right">
+            <p>Naic, Cavite</p>
+            <p>2024 - 2025</p>
+          </div>
+        </div>
+
+        <div class="education-container">
+          <div class="education-item left">
+            <h3>Centro De Naic National High School</h3>
+            <p>High School Diploma, With Honor</p>
+          </div>
+          <div class="education-item right">
+            <p>Naic, Cavite</p>
+            <p>2024 - 2025</p>
+          </div>
+        </div>
+      </section>
+      <!-- Skills & Projects -->
+      <section>
+        <h2>Technical Skills & Projects</h2>
+        <div class="skills-project">
+          <div class="skills">
+            <p>
+              <b>Programming:</b> C++, C#, SQL, PHP, Python, HTML, CSS,
+              JavaScript.
+            </p>
+            <p><b>Design:</b> Adobe XD, Adobe Photoshop, Figma, Canva</p>
+          </div>
+
+          <div class="projects">
+            <h3>DCIT26 Final Project</h3>
+            <p>
+              Developed a PHP Ajax CRUD application to manage student
+              information, enabling dynamic database interactions for creating,
+              reading, updating, and deleting records without full page
+              refreshes, optimizing administrative workflow
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>DCIT55 Final Project</h3>
+            <p>
+              Collaborated in a team of three to design and implement a tailored
+              point-of-sale (POS) system for a local business in Naic, Cavite,
+              focusing on meeting the unique operational requirements.
+              Documented the development process, ensuring the POS solution
+              enhanced transaction efficiency and customer service.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Relevant Experience -->
+      <section>
+        <h2>Relevant Experience</h2>
+
+        <div class="experience">
+          <div class="experience-item">
+            <div class="left">
+              <h3>Open Source Community-Supported Full Stack Curriculum</h3>
+              <h3>Erik Trautman</h3>
+              <p>
+                Currently studying Git and JavaScript, actively enhancing my
+                understanding of version control systems and foundational
+                programming concepts.
+              </p>
             </div>
-            <div class="card">
-              <div class="card__details">
-                <p class="card__title">ClassPoint Certificate of Training.</p>
-                <p class="card__text-body">
-                  Classpoint Certified Trainer, Allan A. Custodio.
-                </p>
-                <p class="card__text-bottom">January 14, 2023</p>
-              </div>
-              <button class="card__button">
-                <a
-                  href="./assets/certifications/ClassPoint Certificate of Training.pdf"
-                  download
-                  >More info</a
-                >
-              </button>
-            </div>
-            <div class="card">
-              <div class="card__details">
-                <p class="card__title">
-                  Metaverse Learning Through Classpoint, Twinkl, ClassClap.
-                </p>
-                <p class="card__text-body">
-                  Founder of ClassClap, Nguyen T. Thuy Hong
-                </p>
-                <p class="card__text-bottom">January 14, 2023</p>
-              </div>
-              <button class="card__button">
-                <a
-                  href="./assets/certifications/Metaverse Learning Through Classpoint, Twinkl, ClassClap.jpg"
-                  download
-                  >More info</a
-                >
-              </button>
-            </div>
-            <div class="card">
-              <div class="card__details">
-                <p class="card__title">
-                  Enterprise System Integration and Automation in Digital Era.
-                </p>
-                <p class="card__text-body">
-                  Department of Information and Communications Technology -
-                  Region IV-A Laguna and LSPU Siniloan - College of Computer
-                  Studies, Graduate Studies Society
-                </p>
-                <p class="card__text-bottom">January 7, 2023</p>
-              </div>
-              <button class="card__button">
-                <a href="#" download>More info</a>
-              </button>
-            </div>
-            <div class="card">
-              <div class="card__details">
-                <p class="card__title">Conquering Responsive Layouts</p>
-                <p class="card__text-body">Kevin Powell, CSS Evangelist</p>
-                <p class="card__text-bottom">November 02, 2022</p>
-              </div>
-              <button class="card__button">
-                <a
-                  href="./assets/certifications/Conquering Responsive Layouts.pdf"
-                  download
-                  >More info</a
-                >
-              </button>
-            </div>
-            <div class="card">
-              <div class="card__details">
-                <p class="card__title">
-                  Programming for Beginners Using Python
-                </p>
-                <p class="card__text-body">
-                  Department of Information and Communications Technology
-                  through the Modern Academics Convergence Hub (MACH)
-                </p>
-                <p class="card__text-bottom">December 07, 2021</p>
-              </div>
-              <button class="card__button">
-                <a
-                  href="./assets/certifications/Programming for Beginners Using Python.pdf"
-                  download
-                  >More info</a
-                >
-              </button>
+            <div class="right">
+              <p>theodinproject.com</p>
+              <p>Current</p>
             </div>
           </div>
-        </section>
+          <div class="experience-item">
+            <div class="left">
+              <h3>DCIT - REGION IV-A</h3>
+              <h3>Al John Villareal, Web Developers for TOT</h3>
+              <p>
+                Developed a COVID-19 Health Declaration Portal as a project to
+                deepen my web development skills, focusing on creating engaging
+                websites and web applications. This endeavor also provided
+                hands-on experience in deploying websites, enhancing my
+                technical proficiency in real-world applications.
+              </p>
+            </div>
+            <div class="right">
+              <p>Laguna</p>
+              <p>August -September 2023</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="left">
+              <h3>Responsive Web Design Executive Director Quin</h3>
+              <h3>Executive Director Quincy Larson</h3>
+              <p>
+                Completed the Responsive Web Design at FreeCodeCamp, mastering
+                HTML5 and CSS3 for mobile-friendly website development. This
+                certification highlights my dedication to learning advanced web
+                design principles and techniques
+              </p>
+            </div>
+            <div class="right">
+              <p>freeCodeCamp.org</p>
+              <p>November 2022 - February 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Leadership -->
+      <section>
+        <h2>Leadership</h2>
+        <div class="leadership-item">
+          <div class="left">
+            <h3>DCIT55 - Final Project</h3>
+            <h3>Dr. Rosh V. Perea</h3>
+            <p>
+              Guided classmates through a collaborative web development project,
+              offering technical leadership and support that contributed to its
+              successful completion. Demonstrated strong mentorship and project
+              coordination skills in an academic team environment.
+            </p>
+          </div>
+          <div class="right">
+            <p>Naic, Cavite</p>
+            <p>July 2023</p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
