@@ -209,6 +209,12 @@ section {
 }
 
 @media (max-width: 500px) {
+
+  header h1,
+  h2 {
+    text-align: left;
+  }
+
   .header-list {
     display: grid;
     grid-template-columns: 1fr;
