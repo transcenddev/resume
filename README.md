@@ -30,7 +30,7 @@ Welcome to my professional CV repository! This project showcases my skills, educ
 ## How to View the CV
 
 You can view the live version of my CV by clicking the link below:  
-👉 [Live Demo](https://transcenddev.github.io/cv)
+👉 [Live Demo](https://transcenddev.github.io/resume/)
 
 ---
 
