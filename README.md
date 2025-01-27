@@ -1,40 +1,43 @@
-# Tech Resume
+# Reymar Mirante - Professional CV
 
-This project showcases a technical resume created using HTML and CSS. The goal is to provide a clean, professional, and easily customizable resume template for students or professionals in the tech industry.
+![GitHub](https://img.shields.io/badge/license-MIT-blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/transcenddev/cv)
+![GitHub repo size](https://img.shields.io/github/repo-size/transcenddev/cv)
+
+Welcome to my professional CV repository! This project showcases my skills, education, and experience in web development, design, and programming. The CV is built using **Semantic HTML**, **CSS**, and follows best practices for **SEO** and **social media sharing**.
+
+---
 
 ## Features
 
-- Responsive design that looks great on both desktop and mobile devices
-- Easy to customize sections including education, experience, projects, and skills
-- Clean and modern layout
+- **Semantic HTML**: Properly structured with meaningful tags like `<header>`, `<section>`, `<article>`, and `<footer>`.
+- **SEO Optimized**: Includes meta tags for search engine optimization.
+- **Open Graph (OG) Tags**: Enhances social media sharing with OG meta tags.
+- **Responsive Design**: Ensures the CV looks great on all devices.
+- **Favicon**: Includes a custom favicon for the webpage.
+
+---
 
 ## Technologies Used
 
-- HTML
-- CSS
+- **HTML5**: For structuring the content.
+- **CSS3**: For styling and layout.
+- **Git & GitHub**: For version control and hosting.
+- **Figma**: For design and prototyping (if applicable).
 
-## Getting Started
+---
 
-To view or edit the resume, follow these steps:
+## How to View the CV
 
-1. Clone the repository:
+You can view the live version of my CV by clicking the link below:  
+👉 [Live Demo](https://transcenddev.github.io/cv)
+
+---
+
+## How to Run Locally
+
+If you'd like to run this project locally, follow these steps:
+
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/transcenddev/resume.git
-   ```
-2. Open the `index.html` file in your preferred web browser.
-
-## Usage
-
-Feel free to customize the content in `index.html` and the styles in `styles.css` to match your own resume information. Replace placeholder text with your own details and adjust the CSS to personalize the design.
-
-## Contributing
-
-If you have suggestions or improvements, feel free to create an issue or submit a pull request. Contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## Contact
-
-If you have any questions or feedback, please contact me at [transcenddevv@gmail.com](mailto:transcenddevv@gmail.com).
+   git clone https://github.com/transcenddev/cv.git
